@@ -4,10 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Salem Ashgrave — Cross the Lines</title>
-  <meta name="description" content="Cross the Lines by Salem Ashgrave. A steamy rivals-to-lovers romance. Pre-order now on Amazon." />
+  <meta name="description" content="Cross the Lines by Salem Ashgrave. A steamy rivals-to-lovers romance. Read the opening chapters. Pre-order now on Amazon." />
   <meta name="author" content="Salem Ashgrave" />
   <meta property="og:title" content="Cross the Lines — Salem Ashgrave" />
-  <meta property="og:description" content="She won the contract. He lost everything but her. A steamy rivals-to-lovers romance." />
+  <meta property="og:description" content="Rivals. High stakes. A line they were never supposed to cross. Read the opening chapters free." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://salemashgrave.com" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -23,28 +23,20 @@
       --accent-hover: #e0b93a;
       --line: rgba(201, 162, 39, 0.25);
     }
-
     * { box-sizing: border-box; margin: 0; padding: 0; }
-
     body {
       font-family: 'Inter', system-ui, sans-serif;
       background: var(--bg);
       color: var(--text);
-      line-height: 1.6;
+      line-height: 1.65;
       min-height: 100vh;
     }
-
     .wrap {
       max-width: 720px;
       margin: 0 auto;
       padding: 2.5rem 1.25rem 4rem;
     }
-
-    header {
-      text-align: center;
-      margin-bottom: 2.5rem;
-    }
-
+    header { text-align: center; margin-bottom: 2.25rem; }
     .author {
       font-family: 'Cormorant Garamond', Georgia, serif;
       font-size: 0.95rem;
@@ -53,7 +45,6 @@
       color: var(--accent);
       margin-bottom: 0.75rem;
     }
-
     h1 {
       font-family: 'Cormorant Garamond', Georgia, serif;
       font-size: clamp(2.4rem, 7vw, 3.6rem);
@@ -62,116 +53,119 @@
       letter-spacing: 0.02em;
       margin-bottom: 0.5rem;
     }
-
     .tagline {
       color: var(--muted);
       font-size: 1.05rem;
       font-style: italic;
       font-family: 'Cormorant Garamond', Georgia, serif;
     }
-
     .divider {
-      width: 64px;
-      height: 1px;
+      width: 64px; height: 1px;
       background: var(--accent);
       margin: 1.75rem auto;
       opacity: 0.7;
     }
-
     .card {
       background: var(--bg-card);
       border: 1px solid var(--line);
       border-radius: 12px;
       padding: 1.75rem 1.5rem;
-      margin-bottom: 1.75rem;
-    }
-
-    .blurb {
-      color: var(--muted);
-      font-size: 1.02rem;
       margin-bottom: 1.5rem;
     }
-
+    .blurb { color: var(--muted); font-size: 1.02rem; margin-bottom: 1.5rem; }
     .blurb p + p { margin-top: 1rem; }
-
     .cta {
-      display: block;
-      width: 100%;
-      text-align: center;
-      background: var(--accent);
-      color: #120e08;
-      font-weight: 600;
-      font-size: 1.05rem;
+      display: block; width: 100%; text-align: center;
+      background: var(--accent); color: #120e08;
+      font-weight: 600; font-size: 1.05rem;
       text-decoration: none;
       padding: 0.95rem 1.25rem;
       border-radius: 8px;
       transition: background 0.2s ease, transform 0.15s ease;
     }
-
-    .cta:hover {
-      background: var(--accent-hover);
-      transform: translateY(-1px);
-    }
-
-    .meta {
-      text-align: center;
-      color: var(--muted);
-      font-size: 0.9rem;
-      margin-top: 0.85rem;
-    }
-
-    .about h2,
-    .links h2 {
-      font-family: 'Cormorant Garamond', Georgia, serif;
-      font-size: 1.45rem;
-      font-weight: 600;
-      margin-bottom: 0.75rem;
-      color: var(--text);
-    }
-
-    .about p {
-      color: var(--muted);
-      font-size: 0.98rem;
-    }
-
-    .social {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.75rem;
-      justify-content: center;
-      margin-top: 1rem;
-    }
-
-    .social a {
-      color: var(--muted);
+    .cta:hover { background: var(--accent-hover); transform: translateY(-1px); }
+    .cta-secondary {
+      display: block; width: 100%; text-align: center;
+      background: transparent; color: var(--accent);
+      font-weight: 600; font-size: 1rem;
       text-decoration: none;
-      font-size: 0.9rem;
+      padding: 0.85rem 1.25rem;
+      border-radius: 8px;
+      border: 1px solid var(--accent);
+      margin-top: 0.75rem;
+      cursor: pointer;
+      transition: background 0.2s ease, color 0.2s ease;
+    }
+    .cta-secondary:hover { background: rgba(201, 162, 39, 0.12); }
+    .meta {
+      text-align: center; color: var(--muted);
+      font-size: 0.9rem; margin-top: 0.85rem;
+    }
+    .about h2, .links h2, .teaser-header h2 {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 1.45rem; font-weight: 600;
+      margin-bottom: 0.75rem; color: var(--text);
+    }
+    .about p { color: var(--muted); font-size: 0.98rem; }
+    .social {
+      display: flex; flex-wrap: wrap; gap: 0.75rem;
+      justify-content: center; margin-top: 1rem;
+    }
+    .social a {
+      color: var(--muted); text-decoration: none; font-size: 0.9rem;
       border: 1px solid var(--line);
-      padding: 0.45rem 0.9rem;
-      border-radius: 999px;
+      padding: 0.45rem 0.9rem; border-radius: 999px;
       transition: color 0.15s ease, border-color 0.15s ease;
     }
-
-    .social a:hover {
-      color: var(--accent);
-      border-color: var(--accent);
-    }
-
+    .social a:hover { color: var(--accent); border-color: var(--accent); }
     footer {
+      text-align: center; margin-top: 2.5rem;
+      color: #6e627a; font-size: 0.8rem;
+    }
+    /* Teaser */
+    #sample { display: none; }
+    #sample.open { display: block; }
+    .teaser-header {
+      text-align: center; margin-bottom: 1.25rem;
+    }
+    .teaser-note {
+      color: var(--muted); font-size: 0.9rem;
+      margin-bottom: 1.5rem; text-align: center;
+    }
+    .sample-body {
+      max-height: none;
+      color: var(--text);
+      font-size: 1.02rem;
+      line-height: 1.75;
+    }
+    .sample-body p { margin-bottom: 1.1rem; color: #e4dcec; }
+    .sample-body .chapter-title {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 1.6rem; font-weight: 600;
+      color: var(--accent);
+      margin: 2rem 0 1.25rem;
       text-align: center;
-      margin-top: 2.5rem;
-      color: #6e627a;
-      font-size: 0.8rem;
+      letter-spacing: 0.04em;
     }
-
-    footer a {
-      color: #8a7b96;
-      text-decoration: none;
+    .sample-body .chapter-title:first-child { margin-top: 0; }
+    .sample-body .scene-break {
+      text-align: center; color: var(--accent);
+      letter-spacing: 0.4em; margin: 1.75rem 0;
+      opacity: 0.8;
     }
-
+    .sample-end {
+      margin-top: 2rem; padding-top: 1.5rem;
+      border-top: 1px solid var(--line);
+      text-align: center;
+    }
+    .sample-end p {
+      color: var(--muted); font-style: italic;
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 1.15rem; margin-bottom: 1.25rem;
+    }
     @media (min-width: 640px) {
       .wrap { padding: 3.5rem 1.5rem 5rem; }
-      .card { padding: 2rem 2rem; }
+      .card { padding: 2rem; }
     }
   </style>
 </head>
@@ -200,7 +194,289 @@
       <a class="cta" href="https://www.amazon.com/dp/B0HCLNQT97" target="_blank" rel="noopener noreferrer">
         Pre-order on Amazon
       </a>
+      <button type="button" class="cta-secondary" id="toggleSample">
+        Read the opening chapters
+      </button>
       <p class="meta">Available November 1 · Kindle &amp; paperback</p>
+    </section>
+
+    <section class="card" id="sample">
+      <div class="teaser-header">
+        <h2>Opening chapters</h2>
+        <p class="teaser-note">A free sample from <em>Cross the Lines</em> — through the first charged encounter.</p>
+      </div>
+      <div class="sample-body">
+          <h2 class="chapter-title">Chapter One</h2>
+          <p>Nia Kane was the first one into the office again.</p>
+          <p>She badged through the glass doors of VitaLink AI at 6:40 a.m., the overhead lights blinking awake in sections as the motion sensors registered her. Fourteenth floor, half of it still smelling faintly of new carpet from the expansion they’d finished in the spring. Four years ago this company had been her, two engineers, and a rented corner of a co-working space with a coffee machine that only worked if you hit it. Now there were sixty-three names on the payroll and a lease she still couldn’t quite believe she’d signed.</p>
+          <p>She set her bag down at her desk, hung her blazer on the back of her chair, and opened her laptop before she’d even sat down.</p>
+          <p>The email was at the top of her inbox, flagged, because Kenji had flagged it at 11:52 the night before.</p>
+          <p>Veridian Therapeutics — Request for Information: AI-Driven Clinical Data &amp; Predictive Analytics Partnership.</p>
+          <p>Nia read it twice. Then a third time, slower.</p>
+          <p>Veridian Therapeutics. One of the largest pharma companies in the country, and they were opening their AI partnership to competitive bid. The contract that everyone in the industry knew belonged to AetherBio Technologies — had belonged to AetherBio for years, the way certain things just belonged to certain people — was going to market.</p>
+          <p>Multi-year. Multi-million. Clinical trial data analysis, predictive modeling for drug efficacy, real-world evidence platforms, secure data infrastructure. It was everything VitaLink had been built to do, at a scale VitaLink had never been allowed to touch.</p>
+          <p>Her pulse picked up, steady and insistent, the way it did at the bottom of a heavy squat.</p>
+          <p>This is it. This is the one.</p>
+          <p>“You’re smiling at your screen.”</p>
+          <p>Nia looked up. Kenji Sato stood at the edge of her desk holding two coffees, which meant he’d also gotten in before seven, which meant he’d seen the RFI too. He was her first technical hire — employee number three, if you counted the way she counted, with herself as one and Simone as two. He’d been there for the co-working space, the credit cards, all of it. He handed her a cup without being asked.</p>
+          <p>“Veridian,” she said.</p>
+          <p>“Veridian,” he agreed. He shifted his weight, eyes going to the window the way they did when he was excited and didn’t want to show it. “The scope is basically our roadmap. Trial analytics, predictive modeling, RWE. It’s like they wrote it after reading our whitepapers.”</p>
+          <p>“They didn’t write it for us.” Nia scrolled through the requirements again. “They wrote it for AetherBio. This is a renewal dressed up as an open bid. Procurement theater. They run a process so the board can say they ran a process, and the incumbent signs again by Christmas.”</p>
+          <p>“So we don’t respond?”</p>
+          <p>She looked at him over the rim of her cup.</p>
+          <p>Kenji smiled at his shoes. “Yeah. Okay. I’ll start pulling the compliance documentation.”</p>
+          <p>By eight thirty she had the leadership team in the glass conference room they’d nicknamed the Fishbowl, the RFI up on the screen, and Dr. Simone Langford sitting at the far end of the table with her arms crossed.</p>
+          <p>Simone had been with her from the beginning — co-founder, CTO, the architect of the core platform that made everything else possible. Tall, precise, dark hair always pulled back into the same severe knot, she had the kind of stillness that made other people fill silence. She sat at the far end of the table with her arms crossed, listening the way she always listened: as if she were already building the counterargument.</p>
+          <p>“It’s a vanity bid,” Simone said, when Nia finished walking them through it. “Veridian has been with AetherBio for years. The relationship is entrenched. We’ll spend six figures of engineering time on a proposal so their procurement team has a third column in a spreadsheet.”</p>
+          <p>“Their relationship is entrenched and strained,” Nia said. “Two of their trial programs slipped timelines last year running on AetherBio’s platform. That’s public. You don’t open a contract like this to bid if you’re happy.”</p>
+          <p>“You don’t win a contract like this at our size, either.”</p>
+          <p>“We’re not our size on paper. We’re our size in results.” Nia kept her voice level. This was the voice she’d taught herself over years of conference tables — even, unhurried, impossible to characterize afterward as aggressive. “Our pilot outcomes beat their platform benchmarks in every category that matters to a clinical team. Faster insights, cleaner data integrity, ethics documentation that regulators actually compliment. We are exactly the company this RFI describes. The only thing we’re too small for is their assumptions.”</p>
+          <p>Silence around the table. Kenji was nodding at his laptop. Two of the engineering leads were already sketching architecture on their notepads, which was how she knew she had them.</p>
+          <p>Simone uncrossed her arms. “And who leads the response?”</p>
+          <p>“I do,” Nia said. “With you on technical architecture. It’s your platform. Nobody presents it better on the deep-science side.”</p>
+          <p>“On the deep-science side,” Simone repeated, softly, like she was filing the phrase somewhere.</p>
+          <p>Nia let it go. There was too much to do to spend the morning managing Simone’s tone.</p>
+          <p>File it. Deal with it later.</p>
+          <p>She had gotten very good at later.</p>
+          <p class="scene-break">* * *</p>
+          <p>They submitted the RFI response eleven days later, and Nia allowed herself exactly one glass of wine on her couch that night, alone, with her phone face-down, before she started outlining the RFP that hadn’t even been issued yet.</p>
+          <p>Talia called at ten. Nia answered on speaker while she typed.</p>
+          <p>“Tell me you’re out,” Talia said. “Tell me you’re somewhere with music and men and overpriced drinks.”</p>
+          <p>“I’m somewhere with a laptop and a spreadsheet and a very nice pinot.”</p>
+          <p>“Nia.”</p>
+          <p>“Talia.”</p>
+          <p>Her best friend’s sigh came through the speaker with eight years of practice behind it. They’d met in a kickboxing class Nia had attended exactly four times; Talia had kept the friendship going out of what she claimed was charity and what was actually the stubbornest loyalty Nia had ever encountered. “One day,” Talia said, “you’re going to look up from that laptop and realize your twenties left without you.”</p>
+          <p>“My twenties are funding a Series C.”</p>
+          <p>“Your twenties have a body that has never once been to brunch in anything cuter than a blazer.” A pause; ice clinking in a glass somewhere on the other end. “What’s the spreadsheet?”</p>
+          <p>“Biggest contract we’ve ever gone after.” Nia heard her own voice change when she said it, felt the current under it. “Veridian Therapeutics. If we land this, VitaLink stops being a promising startup in everybody’s write-ups. We become a serious player. Overnight.”</p>
+          <p>“And if you don’t land it?”</p>
+          <p>“Then a company called AetherBio keeps a contract it inherited, run by a CEO who inherited it too, and the world keeps spinning exactly the way it likes to.”</p>
+          <p>“Ooh.” Talia’s grin was audible. “That was personal. Who’s the CEO?”</p>
+          <p>“Nobody. A nepo baby in a nice suit. Ethan Vale.”</p>
+          <p>“Is he hot?”</p>
+          <p>“Goodnight, Talia.”</p>
+          <p>She hung up smiling, and the smile stayed while she refilled the wine, and then, the way it always did on the nights before the big swings, her mind went back to the beginning. To the other pitch. The first one.</p>
+          <p>She’d been twenty-five, eight months into the company, and out of money in the way that has a texture to it — two credit cards maxed, the co-working lease due, Kenji and Simone taking half salary and pretending it was fine. She’d landed exactly one meeting, cold, with a mid-sized VC firm downtown, and she’d prepared for it like a bar exam. Navy pantsuit. High-necked blouse. Hair in a low bun. Forty slides she could recite backward, unit economics she’d stress-tested against every objection she could invent.</p>
+          <p>The lead partner spent most of her presentation on his phone.</p>
+          <p>The questions, when they came, weren’t about the technology. How old are you, exactly? Have you ever actually managed a P&amp;L? Don’t you think a partnership with a more… experienced operator would de-risk this? Forty minutes of being asked, in a dozen polite formats, to justify her own existence, while the thing she’d built — the thing that worked — sat on the screen behind them, unexamined.</p>
+          <p>At the end, she’d stood, shaken their hands, and said the only sentence from that day she’d kept: “I’m not going to pretend I’m someone I’m not just to make you comfortable.”</p>
+          <p>They never called.</p>
+          <p>She’d gone home to her one-bedroom, sat on the floor with her back against the couch, and seriously considered — for one long, bad night — giving it all up and taking the safe salary everyone kept telling her to want. And then somewhere around two in the morning the grief had burned off and left something harder and more useful, and she’d opened her laptop and written the plan that saved the company. Ninety days. Ship the product, finished or not. Pilots for any mid-sized biotech that would take a meeting, at cost, below cost, free if the data rights were good. Cut everything. Be everywhere — every regional conference, every panel with an open chair, every room with one decision-maker in it.</p>
+          <p>The first pilot had landed in month five. The seed round — from a deep-tech firm that led with questions about her platform instead of her age — closed seven months after the pitch that never called back. The team grew from four to nine, and then kept growing, and no one had asked her to justify her existence in a first meeting since.</p>
+          <p>Although, she thought, draining the glass and looking at the Veridian folder glowing on her screen — technically, that wasn’t true. They’d just gotten quieter about the format.</p>
+          <p class="scene-break">* * *</p>
+          <p>Three weeks after that, Veridian invited RFI respondents to a preliminary vendor briefing at their headquarters downtown, and Nia stood in her closet at six in the morning deciding, the way she always decided.</p>
+          <p>The navy pantsuit. Tailored blazer, cut loose through the hip. High-necked ivory blouse. Flat professional heels. She checked herself once in the mirror by the door — dark skin still warm from the shower, black hair smoothed into a low, controlled twist, the face she showed the world: composed, unreadable, built for rooms that underestimated her.</p>
+          <p>She knew what she looked like under the suit. She’d built it rep by rep at five thirty in the morning, six days a week, for years — and she buried it in structured wool every single workday, on purpose, because she had learned at twenty-two what happened to women whose bodies entered the room before their credentials did. Nobody at that briefing was going to be given the option of underestimating her for that reason. They’d have to find another one.</p>
+          <p>They always found another one.</p>
+          <p>The Veridian lobby was four stories of glass and white marble with a wall of living plants behind the reception desk, the kind of lobby designed to make visitors feel the market cap in their sternum. Nia signed in, clipped her badge to her lapel, and was reviewing her notes by the window when a voice said her name.</p>
+          <p>“Ms. Kane. Glad you could make it down.” Tom Brennan, Veridian’s VP of Strategic Partnerships — silver-haired, easy-smiled, the executive sponsor on the RFI. He shook her hand warmly. “Your response made some noise upstairs, I’ll tell you that. The data integrity section got forwarded around.”</p>
+          <p>“That’s what it’s for,” Nia said, and he laughed.</p>
+          <p>“Come on, I’ll walk you up. Oh—“ He lifted a hand, flagging someone across the lobby. “Actually, here’s an introduction worth making. You two are going to be seeing a lot of each other’s names.”</p>
+          <p>Nia turned.</p>
+          <p>She knew him from the trade press, the way you know anyone from photographs — accurately and not at all. Ethan Vale in person was taller than the photos suggested, six-three at least, dark-haired, with the kind of tailoring that didn’t announce itself and a beard groomed to the millimeter. He was mid-conversation with a young woman in a skirt that tested the outer boundary of business attire, and when Brennan called his name he turned with the unhurried confidence of a man who had never once wondered whether a room wanted him in it.</p>
+          <p>“Ethan Vale, AetherBio,” Brennan said. “Ethan — Nia Kane, founder and CEO of VitaLink AI. One of our RFI respondents.”</p>
+          <p>“Is that right.” Vale’s handshake was brief and firm and already over. His eyes moved across her once — suit, badge, face — with the flat efficiency of a man scanning a parking sign. “VitaLink. The pilot-program shop.”</p>
+          <p>“The one with the outcomes,” Nia said pleasantly. “You may have seen the benchmarks.”</p>
+          <p>“I see a lot of benchmarks from companies your size.” He said it without heat, which somehow made it worse — not even a jab, just a filing decision. The young woman at his side had drifted closer, her hand landing on his forearm, angling her body between them with a bright, vacant smile. “Small samples photograph well.”</p>
+          <p>“So do incumbents,” Nia said. “Right up until the RFP scores come back.”</p>
+          <p>Something flickered at the corner of his mouth — she’d have called it amusement on a man who was actually listening. He was already glancing at his watch. “Well. Good luck with the process, Ms. Kane. It’s a long one. Tom — I’ll see you upstairs.”</p>
+          <p>And that was it. He turned, the assistant turning with him, her hand still on his arm, one quick look thrown back over her shoulder — not at Nia’s face, Nia noticed, but lower, a fast down-and-up flick before the girl’s smile snapped back into place. Then the elevator swallowed them both.</p>
+          <p>Nia stood in the white marble lobby with her notes in her hand.</p>
+          <p>Her face was perfectly calm. Her face was always perfectly calm.</p>
+          <p>Inside, something old and familiar had its jaws locked around her ribs. He barely looked at you. You’ve run a company for four years, you beat his benchmarks with a tenth of his budget, and he looked at you like a line item. It was the health-tech conference rooms all over again. It was her project in another man’s slide deck, her name nowhere, her manager telling her not to be difficult about it. It was the VC who’d spent forty minutes on his phone while she pitched the best idea he’d hear that decade.</p>
+          <p>She had built an entire company out of moments like this one. Every person who had ever looked through her had, in the end, been made to look again.</p>
+          <p>Brennan was holding the elevator. “Ms. Kane?”</p>
+          <p>Nia tucked her notes under her arm and walked, heels quiet on the marble, spine straight, mouth set in the pleasant, unreadable line she’d perfected years ago.</p>
+          <p>Enjoy the assumption, Mr. Vale, she thought, stepping into the elevator. It’s the last free thing I ever give you.</p>
+          <h2 class="chapter-title">Chapter Two</h2>
+          <p>Ethan Vale’s alarm went off at six, the way it went off at six every day of his life, and he was under the bar in his building’s private gym by six fifteen.</p>
+          <p>Routine was routine. It had carried him through the worst years of his life, and he didn’t renegotiate with it just because the day ahead looked easy. Today looked easy. A relationship review at Veridian Therapeutics, a round of handshakes, some procurement theater about the renewal — Veridian liked to make its incumbents sweat a little every cycle, and AetherBio would nod along politely, and by year’s end the contract would be signed for another term. It was the largest single account on AetherBio’s books and the cornerstone of everything he’d rebuilt.</p>
+          <p>He showered, dressed — charcoal suit, no tie, the beard trimmed the way it was trimmed every third day — and was in the back of the car by 7:40. In the window reflection he looked the way he always did before a fight he expected to win: dark hair still slightly damp, jaw set, the height and clean lines that made people give him space without knowing why.</p>
+          <p>Lila was already talking.</p>
+          <p>“—so I confirmed the ten o’clock with Mr. Brennan’s office, and I printed the relationship deck even though I know you never use it, because you like having it, and I told Devon in scheduling that no, you’re not doing the podcast thing, and—“ His assistant paused for breath, recrossing her legs in a skirt that HR would eventually have to have a conversation about. “Also your two o’clock tomorrow tried to move to today and I said absolutely not, because you hate when Tuesdays get heavy.”</p>
+          <p>“Thank you, Lila.”</p>
+          <p>She beamed like he’d handed her a medal. Lila Chen — twenty-two, eight months out of college, relentlessly competent, and possessed of a crush she had not yet learned to hide. Small, sharp-featured, dark hair cut in a precise bob, she moved through his schedule like it was a sport she intended to win.</p>
+          <p>His phone buzzed. A name he hadn’t seen in four months: Vanessa. He deleted the message without opening it. Buzz. You can’t just ignore me forever, E. He could, actually. It was one of his few uncomplicated pleasures.</p>
+          <p>There was a rotation of them — Vanessa, and before her a gallery hostess, and before her a woman who’d introduced herself at a benefit by telling him she’d read his father’s obituary twice. They surfaced every few months like weather. He’d stopped being flattered somewhere in his late twenties, around the time he’d noticed that every one of them looked at him the way analysts looked at a balance sheet: assets, access, upside. None of them had ever once asked him a question he couldn’t have answered from his own press coverage. Dating, for Ethan Vale, had become a series of due-diligence exercises conducted by the other party, and he had, without ever formally deciding to, simply stopped showing up for them.</p>
+          <p>“Everything okay?” Lila asked, eyes flicking to the phone with the tracking speed of a hawk.</p>
+          <p>“Fine.”</p>
+          <p>The Veridian meeting went the way Veridian meetings went — conference room on the thirty-first floor, coffee in branded cups, mutual congratulation on uptime statistics — right up until the last ten minutes, when Tom Brennan folded his hands on the table and said, “You’ll have seen we issued the RFI broadly this cycle.”</p>
+          <p>“I saw,” Ethan said. “Your procurement team enjoys its traditions.”</p>
+          <p>“Bit more than tradition this time.” Brennan’s smile stayed warm, which was how Ethan knew to start paying attention. “Board wants a genuine market scan. The trial-timeline slippage last year raised some questions upstairs. We’ve had strong responses. A few of them very strong.”</p>
+          <p>“From whom?”</p>
+          <p>“Now, Ethan.”</p>
+          <p>“From whom that I’d take seriously?”</p>
+          <p>Brennan tilted his head, conceding the game. “ForgeBio put in a serious response. And there’s a smaller shop, VitaLink AI — you know them?”</p>
+          <p>“I know the name. Pilot programs. Twenty, thirty people.”</p>
+          <p>“Sixty-three,” Brennan said, with the precision of a man who’d just read a briefing memo, “and the sharpest data-integrity documentation my clinical team has ever scored. Their founder’s downstairs today, actually, for the vendor briefing.”</p>
+          <p>Ethan felt the first genuine irritation of the day settle in behind his sternum. Not concern — the idea of Veridian moving its clinical backbone to a sixty-person startup was the kind of thing boards flirted with and never did. But the renewal that wasn’t quite a renewal meant months of process. Presentations. Scored bake-offs. His board asking questions with his father’s name hovering unspoken behind every one of them.</p>
+          <p>Wonderful.</p>
+          <p>They ran into her in the lobby, because of course Brennan made a point of it.</p>
+          <p>“Ethan — Nia Kane, founder and CEO of VitaLink AI. One of our RFI respondents.”</p>
+          <p>She was small. That was the first thing he registered, and nearly the only thing: five-three, maybe, in sensible heels, swallowed up in a navy pantsuit cut like armor, hair scraped back, everything about her presentation seeming to insist on its own seriousness — which, in Ethan’s long experience of founders, was what people did when the fundamentals couldn’t speak for themselves. Young. Startlingly young to be running anything Brennan would bother scoring.</p>
+          <p>“Is that right,” he said, shaking her hand. “VitaLink. The pilot-program shop.”</p>
+          <p>“The one with the outcomes. You may have seen the benchmarks.”</p>
+          <p>Confident. They were always confident; confidence was free. “I see a lot of benchmarks from companies your size. Small samples photograph well.”</p>
+          <p>“So do incumbents,” she said, without a beat of hesitation. “Right up until the RFP scores come back.”</p>
+          <p>Huh.</p>
+          <p>It landed — he’d give her that much; the line was clean, delivered level, no flush, no filler. Somewhere at the edge of his attention Lila had materialized against his arm, chattering something about the car, standing half in front of him the way she did when she’d decided a conversation was over. He let the interruption carry him. There was nothing here worth the time. A scrappy founder with good documentation and a nice line in comebacks was still, at the end of the quarter, a sixty-three-person company asking a Fortune 100 pharma giant to bet its clinical pipeline on her.</p>
+          <p>“Well. Good luck with the process, Ms. Kane. It’s a long one. Tom — I’ll see you upstairs.”</p>
+          <p>By the time the elevator doors closed he had mostly stopped thinking about her.</p>
+          <p class="scene-break">* * *</p>
+          <p>Mostly.</p>
+          <p>His apartment was quiet that night, the way he kept it. Twenty-ninth floor, glass on two sides, the Seattle skyline and Elliott Bay laid out below him in clean, cold light.</p>
+          <p>The board. That was the splinter he couldn’t stop touching. A genuine market scan. He could already draft the email one of the older directors would send: Concerning to see the Veridian relationship contested. Under your father, renewal was never in question.</p>
+          <p>Under his father, half the client base had been quietly shopping for exits and the flagship platform was two architecture generations out of date. That was the part nobody printed. The trade press wrote scion takes the helm and the business school cases wrote succession at AetherBio, and none of them wrote about what he’d actually inherited: a decade of bad acquisitions his father had made in his last, stubborn years, a culture so toxic the exit interviews read like depositions, morale gutted, the best engineers already gone or going. Ethan had spent nine years mucking out the stables of a company everyone assumed had been handed to him gift-wrapped — the layoffs he still thought about, the ground-up platform rebuild, the clients he’d personally flown out to win back one steak dinner at a time — and the reward was a boardroom where half the room still waited for him to coast and the other half waited for him to fail. He’d stopped explaining it years ago. Explaining sounded like excuses, and excuses were his father’s genre.</p>
+          <p>Right on schedule, his phone lit up. An email from Halloran, the longest-tenured director, subject line Veridian: three sentences of concern ending with, Your father always considered this relationship the bedrock of the firm. I trust you’ll treat it accordingly.</p>
+          <p>Ethan typed It’s handled, deleted it, typed The renewal process is proceeding as expected and we remain strongly positioned, and sent that instead. Diplomacy was just lying with better tailoring.</p>
+          <p>He opened a browser tab to check one number in Veridian’s public filings, and instead — with the small self-disgust of a man picking a scab — typed Nia Kane VitaLink into the search bar.</p>
+          <p>He expected fluff. A seed announcement, a diversity-in-tech listicle, a founder headshot with a rented backdrop.</p>
+          <p>He read for an hour.</p>
+          <p>Biomedical engineering and computer science, top-tier university, scholarship. Four years at one of the big health-tech companies — and then, at twenty-four, gone, out, founding VitaLink with two engineers and what a profile in an industry journal described as “personal savings and a grudge.” The company had shipped product in under a year. The pilot outcomes weren’t photographed benchmarks; they were peer-scrutinized results at three mid-sized biotechs, and one of the write-ups quoted a clinical director calling VitaLink’s data-integrity framework “the first one I’ve seen that treats ethics as an engineering requirement instead of a slide.”</p>
+          <p>There was a conference video. He told himself he watched it for competitive diligence. On the small stage of some regional health-tech summit, Nia Kane — younger, the suit no less severe — walked an audience through clinical data failure modes with a dry, surgical wit that had the room laughing at validation protocols, and answered a hostile question from the floor by dismantling it so cleanly that the questioner ended up nodding along.</p>
+          <p>Twenty-eight. She’d built all of it in four years, from nothing, in an industry that made incumbents out of dynasties.</p>
+          <p>Ethan sat back. The scotch was untouched. Down in the city a siren threaded between the towers and faded. From his twenty-ninth-floor windows the Seattle skyline stretched toward Elliott Bay, the Space Needle a dark needle against the late light, the water a black sheet beyond the waterfront.</p>
+          <p>He thought about the lobby — the flat once-over he’d given her, the pilot-program shop, the way he’d walked off mid-sentence because his assistant tugged his sleeve. He wasn’t a man who indulged much self-examination, but he recognized the shape of what he’d done, because people had been doing it to him, in mirror image, his whole career. He’d looked at the packaging and skipped the diligence.</p>
+          <p>She’s still not winning that contract, he thought, closing the laptop. Sixty-three people. No global support organization. No enterprise track record at Veridian’s scale. The math hadn’t changed.</p>
+          <p>But the math had a footnote now, and the footnote had a voice, level and unhurried: So do incumbents. Right up until the RFP scores come back.</p>
+          <p>He took the scotch to the window and stood there longer than he meant to, looking at nothing in particular, feeling — faintly, absurdly, for the first time in that entire gilded process — like a man who might actually be in a competition.</p>
+          <h2 class="chapter-title">Chapter Three</h2>
+          <p>The RFP dropped on a Friday afternoon, four hundred and twelve pages of requirements, and VitaLink’s fourteenth floor did not have a quiet weekend for six weeks.</p>
+          <p>Nia lived at the office. She was there when the cleaning crew came through at night and there when the espresso machine hissed awake in the morning; she ran the response like a clinical trial, every section owned, every claim sourced, every number triple-verified. Kenji built the technical demonstration environment practically in his sleep — she caught him once at two in the morning, headphones on, whispering to his monitor, “come on, come on, beautiful,” at a data pipeline — and Simone’s architecture section was, Nia admitted freely and to everyone, the best hundred pages the company had ever produced.</p>
+          <p>The friction came later, and it came exactly where Nia had known it would.</p>
+          <p>“The presentation phase,” Simone said, standing in Nia’s office doorway with a printout of Veridian’s process timeline. “If we shortlist. The demos, the executive sessions. I should lead them.”</p>
+          <p>“You’ll lead the technical deep-dives. Every one of them.”</p>
+          <p>“I built the platform, Nia.”</p>
+          <p>“And I built the company.” Nia kept her tone even, the way she kept it even in every one of these conversations, of which there were now enough to constitute a pattern she was still choosing not to name. “Veridian isn’t just buying architecture. They’re buying a partner they trust for a decade. That’s a CEO conversation. It would be a CEO conversation if our roles were reversed.”</p>
+          <p>“Would it?” Simone’s smile was thin and brief. “Interesting.”</p>
+          <p>She left before Nia could decide whether to answer.</p>
+          <p>Later, Nia told herself, turning back to the compliance matrix. File it. Deal with it later.</p>
+          <p>The later pile was getting tall.</p>
+          <p>It wasn’t that Simone was wrong to want more. Nia understood ambition; ambition was the family language. And the platform genuinely was Simone’s — the core architecture, the papers behind it, the mathematics Nia could follow but never could have originated. In the co-working-space days they’d been good together, better than good: Nia selling a future out of an empty room while Simone built it behind her, two kinds of brilliance that fit. Somewhere in the last two years the fit had shifted. Now, when Nia walked the engineering floor, she noticed how conversation pooled around Simone’s desk and went quiet at her own approach — nothing hostile, nothing actionable, just a temperature. Half the technical staff had been hired by Simone, reviewed by Simone, promoted on Simone’s word. It was an org chart with a shadow on it.</p>
+          <p>“You should talk to her,” Kenji said once, without looking up from his monitor, in the middle of a conversation they were not having.</p>
+          <p>“About what?”</p>
+          <p>“Whatever it is that you both keep almost saying in meetings.”</p>
+          <p>“There’s nothing to talk about,” Nia said, and Kenji, who had known her for four years, mercifully let the lie go by.</p>
+          <p class="scene-break">* * *</p>
+          <p>The shortlist email arrived on a Tuesday at 9:04 a.m., and Nia read it standing up, in the middle of the floor, with the whole company pretending not to watch her.</p>
+          <p>Veridian Therapeutics is pleased to inform you that VitaLink AI has been selected as one of three finalists…</p>
+          <p>The floor found out from her face before she said a word. Someone whooped. Kenji did something with his arms that was probably a fist pump in a language only he spoke. Simone, across the floor, raised her coffee in a small, precise salute that could have meant anything.</p>
+          <p>Three finalists. AetherBio Technologies, the incumbent. ForgeBio Dynamics — Marcus Hale’s shop, big, aggressive, a known quantity. And VitaLink.</p>
+          <p>Her phone was already ringing. Talia.</p>
+          <p>“Tell me,” Talia demanded.</p>
+          <p>“We made the shortlist.”</p>
+          <p>The scream on the other end forced the phone away from her ear. “Okay — okay. Details. What happens next?”</p>
+          <p>Nia scrolled the email. “Final phase. Demos, executive presentations, site visits, and…” She stopped.</p>
+          <p>“And?”</p>
+          <p>“They’re hosting a partner summit. All three finalists. Presentations to the selection committee, technical sessions, networking.” She read the line again to be sure. “Four days. In Hawaii. Attendance is mandatory for finalist leadership.”</p>
+          <p>Silence. Then, in a voice gone dangerously silky: “Nia. My love. Did you just say mandatory Hawaii?“</p>
+          <p>“Talia—“</p>
+          <p>“I’m coming.”</p>
+          <p>“It’s a work—“</p>
+          <p>“You’ll be in sessions all day, I’ll be at the pool, we’ll have dinner at night, and someone will finally, finally get you into clothing that wasn’t manufactured for a Senate hearing. I’m booking my flight right now. You can hear me typing. That’s the sound of it being nonrefundable.”</p>
+          <p>Nia stood at the window with the phone against her ear, looking out at the city, and let herself laugh for what felt like the first time in six weeks. “Fine. But I’m working.”</p>
+          <p>“Sure you are,” said Talia, and hung up before Nia could clarify how much she meant it.</p>
+          <p class="scene-break">* * *</p>
+          <p>At AetherBio, the shortlist landed differently.</p>
+          <p>“ForgeBio was inevitable,” Ethan said, reading the notification a second time. “Hale’s been circling this account for years.”</p>
+          <p>“And VitaLink?” His head of enterprise sales hovered at the edge of the desk, wearing the expression of a man deciding whether the boss wanted honesty or reassurance.</p>
+          <p>Ethan looked at the three names for a long moment.</p>
+          <p>He’d told himself the math hadn’t changed, and for six weeks he’d half believed it. But somewhere in a scoring room at Veridian, a sixty-three-person company had just outpointed four multinationals for the last chair at the table, and no procurement process on earth did that as a courtesy.</p>
+          <p>“VitaLink is real,” he said. “Score her like ForgeBio. Better — score her like us.” He caught the her a half-second after it left his mouth; if the sales lead noticed, he was wise enough not to show it.</p>
+          <p>Lila took the news of the Hawaii summit like a lottery win she’d personally deserved. Within an hour she’d built a travel folder, color-coded, with his flights, his suite, a gym schedule — she knew his routine to the minute, which was either excellent assistance or light surveillance — and a tab labeled COMPETITIVE INTEL that consisted mostly, he noticed, of photographs of Nia Kane. She lingered at his desk after handing over the itinerary, perfume arriving a moment before she did.</p>
+          <p>“Four days,” she said brightly. “It’ll be nice. I mean — productive. But nice.” Her hand landed on his shoulder, adjusting nothing. “I’ll make sure nobody wastes your time down there.”</p>
+          <p>“Just the schedule, Lila. Thank you.”</p>
+          <p>When she’d gone, Ethan looked at the itinerary and found the summit agenda on the second page. Day two: finalist presentations, 20 minutes per company, selection committee attending in full.</p>
+          <p>He thought — briefly, without deciding to — of a video on a small conference stage. Dry wit, surgical hands, a room laughing at validation protocols.</p>
+          <p>Score her like us.</p>
+          <p class="scene-break">* * *</p>
+          <p>Two floors down, in a supply room that smelled of toner and cardboard, Lila Chen was letting Bob Miller believe things.</p>
+          <p>Bob was thirty-five, a mid-level operations manager with a soft middle and thinning hair and the perpetual mild surprise of a man to whom nothing interesting had ever happened. Three weeks ago, at the end of a happy hour she’d engineered, something interesting had finally happened to him, and he had not recovered. He texted her good morning. He texted her good night. He’d started using we.</p>
+          <p>“I was thinking,” Bob said now, while she checked her lipstick in her phone camera, “after the Hawaii trip — there’s this Italian place near my building—“</p>
+          <p>“Mm.” Lila tilted her chin, examining the line of her mouth. Ethan liked understated; she’d been going more understated lately. “I’ll be pretty busy with the summit.”</p>
+          <p>“Right, no, totally.” He shifted the box he was pretending to look for. “It’s just — this thing with us. I really feel like—“</p>
+          <p>“Bob.” She turned the smile on him at full wattage, and watched it do what it did. “Don’t ruin it by talking about it.”</p>
+          <p>He nodded, hopeless, hooked.</p>
+          <p>It had required exactly one night — one — and honestly not even a demanding one, and Bob Miller had reorganized his entire interior life around her. Which was the point. Not Bob himself, obviously; Bob was a rounding error, a man-shaped beige cardigan. The point was the principle of Bob. The point was that men noticed when other men wanted you. She’d read that in enough places to consider it research. Ethan spent his days surrounded by people who worked for him; fine — let him hear, through the office’s excellent plumbing, that his assistant had options. Let him wonder. Let him feel, even for one distracted afternoon, one percent of what she felt every single day standing next to him with her heart doing gymnastics while he said thank you, Lila like she was a calendar notification.</p>
+          <p>So far the plan had produced no detectable wondering. She was giving it until the end of the quarter.</p>
+          <p>She patted Bob’s lapel, slipped out the door, and was composing her face into bright professional sunshine before she’d finished the thought underneath it — the thought that had been running on a loop since the itinerary crossed her desk with that woman’s photo in the intel tab.</p>
+          <p>Four days on an island. Just don’t embarrass yourself, and don’t let her anywhere near him.</p>
+          <p class="scene-break">* * *</p>
+          <p>The night before the flight, Nia packed the way she prepped a board meeting: a checklist, a garment bag, and no improvisation. Pantsuits. Blouses. The flat heels and one pair of sharper ones for the presentation. Gym clothes — the real ones, the tight shorts and sports bras that never left the gym or her apartment — because four days without lifting was not a thing that happened, contract or no contract.</p>
+          <p>At the bottom of the suitcase she found the swimsuit she’d owned for six years: a sensible black one-piece with a racerback, executive even when soaked. She packed it and could already hear Talia’s commentary.</p>
+          <p>Her phone lit up. Kenji: Rehearsal schedule for the island. Night 1, run-through x2. Day 2 morning, final pass before presentations. I checked — our room block has a business center. It’s adequate.</p>
+          <p>Then, a second text: We’re going to win this.</p>
+          <p>Nia sat down on the edge of the bed, suitcase open beside her, and let herself feel it for exactly ten seconds — the whole improbable arc of it, the co-working space and the maxed-out credit cards and the investor who never called, all the way to a mandatory summit on an island where a Fortune 100 company would decide whether the thing she’d built with her own hands was about to become undeniable.</p>
+          <p>Three finalists. The nepo baby, the shark, and her.</p>
+          <p>You wanted them to look again, she thought, zipping the suitcase shut. In four days, they won’t be able to look anywhere else.</p>
+          <h2 class="chapter-title">Chapter Four</h2>
+          <p>The island announced itself through the plane window as a ridge of green volcanic slopes falling into water so blue it looked color-corrected, and Nia spared it one long look before going back to her slides.</p>
+          <p>They landed early in the afternoon. Veridian had booked the finalists into the same oceanfront resort — an arrangement someone in procurement probably considered efficient and Nia considered psychological warfare — but the arrivals were staggered, and she made it from the airport to her room without seeing a single face from AetherBio or ForgeBio. Small mercies.</p>
+          <p>Talia peeled off at the lobby bar with a wave (“Find me when you’re done being important”). Kenji was knocking on Nia’s door before she’d finished hanging the garment bag.</p>
+          <p>They ran the presentation twice, end to end. Kenji, who could barely order coffee without rehearsing it under his breath, became a different organism entirely when the slides went up — precise, fluid, borderline commanding. It was one of her favorite transformations in the world. But by the second run-through her own delivery was fraying at the edges, the words going mechanical, and she could hear it happening and couldn’t stop it, which made it worse.</p>
+          <p>“You’re tired,” Kenji observed, in the tone of a man reporting a metric.</p>
+          <p>“I’m fine.”</p>
+          <p>“Your pacing dropped eleven percent on the regulatory section.”</p>
+          <p>“Kenji.“</p>
+          <p>“I’m going to get dinner,” he said, closing his laptop. “You should not look at these slides again tonight. The marginal return is negative.”</p>
+          <p>When the door shut behind him, Nia stood in the middle of the room for a moment, wired and restless, stress sitting in her chest like a swallowed stone. Tomorrow, twenty minutes in front of the selection committee. The biggest twenty minutes of her company’s life.</p>
+          <p>She knew this feeling. She’d met it the night before the pitch at twenty-five, the night before every board meeting since, and she knew its tricks — how it dressed itself up as diligence, how it whispered that one more run-through would fix it, when the run-throughs were the thing unraveling her. Sixty-three people were on the other end of tomorrow. Kenji’s mortgage. The engineers who’d taken half salary in the early days and stayed anyway. Everyone who had ever said she’s not ready and everyone who’d bet otherwise.</p>
+          <p>Her phone buzzed. Talia: Come down to the bar. There’s a drink here with an umbrella in it and it’s asking about you.</p>
+          <p>Nia typed back: Working. Behave.</p>
+          <p>One of us will, came the reply, instantly.</p>
+          <p>There was exactly one reliable way to burn this feeling off, and it wasn’t the minibar.</p>
+          <p>She changed into her gym clothes — the tight black shorts, the sports bra, the real ones — grabbed a towel and her phone, and went to find the resort gym.</p>
+          <p class="scene-break">* * *</p>
+          <p>It was better than most hotel gyms: a proper squat rack, actual plates, a wall of mirrors, mostly empty in the early evening with the whole resort out chasing the sunset. Nia claimed the rack, loaded the bar, and got to work.</p>
+          <p>By the second set of squats the day was finally starting to leave her body — the flight, the slides, the eleven percent, all of it dissolving into the honest arithmetic of weight and breath. Sweat rolled down her back and between her breasts. Her shorts and bra were sticking to her skin. She didn’t care. This was hers, this hour; it was the one appointment she never rescheduled.</p>
+          <p>Focus. Just get through the workout. You still have to sleep before you can be brilliant.</p>
+          <p>That was when she felt it — that unmistakable prickling of being watched.</p>
+          <p>She didn’t stop moving. She adjusted her stance slightly and kept going, and on the way up out of the next rep she found the reflection in the mirror.</p>
+          <p>Ethan Vale.</p>
+          <p>He was on the treadmill near the entrance in basketball shorts and a compression shirt that made a strong case for whatever his own routine was — and he wasn’t really running. He was staring. Not the incidental glance of a man sharing a gym; he was locked in, eyes fixed on her body, on her back, on the movement of her in a way that had nothing to do with market share. His mouth was slightly open. He looked like a man who had forgotten he was on a moving belt.</p>
+          <p>Nia felt a sharp, entirely unexpected rush of satisfaction.</p>
+          <p>So the arrogant asshole finally sees me as something other than an inconvenience.</p>
+          <p>She remembered the lobby. The flat once-over. The pilot-program shop. The way he’d ended the conversation mid-sentence and walked off with his assistant hanging on his arm like a coat. And now here he was, the mighty Ethan Vale, practically unspooling on a treadmill because she was doing squats.</p>
+          <p>A small, dangerous smile tugged at the corner of her mouth.</p>
+          <p>You want a show? Fine.</p>
+          <p>She didn’t make it obvious. She just adjusted her form enough to make the next few reps deeper, slower, more deliberate — she knew exactly what she looked like when she moved like this; she had built this, rep by rep, at five thirty in the morning for years — and she let him watch what he’d been too arrogant to notice.</p>
+          <p>Part of her was annoyed at how much his attention affected her. Her skin was heating in a way that had nothing to do with the bar on her shoulders. But there was something undeniably powerful about it: the man who’d looked through her in that marble lobby couldn’t look away from her now.</p>
+          <p class="scene-break">* * *</p>
+          <p>Ethan had arrived at the gym at his usual time, because routine was routine, even an ocean away from home.</p>
+          <p>He’d started the way he always started — easy warm-up pace on the treadmill, eyes doing an idle scan of the room — and then everything had stopped working properly, because there was a woman in the squat rack with her back to him, and she had the kind of body that made a man forget what his legs were for. Toned. Powerful. A round, muscular ass that moved with control through every rep, sweat glistening down a sculpted back under the gym lights, tight shorts holding on for dear life. He watched the muscles of her back flex and release and found he had been watching for some number of seconds that no longer qualified as casual.</p>
+          <p>It took him far longer than it should have to realize who she was.</p>
+          <p>Nia Kane.</p>
+          <p>The recognition hit like a dropped plate — and in the same instant her eyes found his in the mirror.</p>
+          <p>Caught. Completely, indefensibly caught.</p>
+          <p>Ethan jabbed at the treadmill console and sped up, pretending he’d been adjusting the pace the whole time, staring straight ahead now with the rigid discipline of a man being escorted past a car accident. His heart rate was well ahead of the machine’s readout and climbing.</p>
+          <p>He tried to refocus. He genuinely tried.</p>
+          <p>It didn’t work. His eyes kept pulling sideways of their own accord, and every time they did she was still there, and it was apparently leg day, and every rep looked like a deliberate act of aggression against him personally. The severe navy pantsuit from the lobby had been, he now understood, an elaborate act of concealment. He was getting hard in a hotel gym watching his chief competitor squat, and he hated himself with a thoroughness he usually reserved for his father’s acquisitions.</p>
+          <p>He surrendered the treadmill and moved to the machines on the far side of the gym, put his head down, and started doing arm work he didn’t need, sets and reps of pure evasion.</p>
+          <p>Where the fuck was Lila when he actually needed her?</p>
+          <p>She hovered around him everywhere — touching his arm, filling silence, a human buffer against exactly this kind of unstructured catastrophe — and tonight, the one night her chatter would have been useful, she was nowhere in existence.</p>
+          <p>Across the gym, Nia finished her final set and racked the bar with a clang that rang off the mirrors. She took her time wiping down the equipment. Then she gathered her towel, and on her way to the exit she glanced over and caught his eye — directly, deliberately, no mirror to hide in this time.</p>
+          <p>She gave him a small, quick smile. Knowing. Sharp at one corner. A smile that said, with perfect clarity: Yeah. I saw you.</p>
+          <p>Ethan did not smile back. He nodded once, curtly, and looked away, becoming extremely interested in the cable machine’s weight stack.</p>
+          <p>The door closed behind her.</p>
+          <p>He sat there for a long moment, forearms on his knees, staring at the floor of a hotel gym in the middle of the Pacific Ocean, feeling the exact dimensions of the problem he now had.</p>
+          <p class="scene-break">* * *</p>
+          <p>Nia walked back to her room with her heart beating harder than the workout justified, and she knew it, and she made herself not think about it in the elevator, which meant she thought about it the entire time.</p>
+          <p>She took a long shower, letting the hot water run over her body while the moment replayed on a loop she couldn’t shut off. The look on his face. Not a glance — locked in. The mighty Ethan Vale, trance-broken and scrambling at a treadmill console like a teenager caught staring at the lifeguard.</p>
+          <p>A small, satisfied smile kept surfacing as she dried off.</p>
+          <p>So he isn’t as unaffected as he pretends to be.</p>
+          <p>She ordered room service and spent the next two hours on a video call with Kenji, running the presentation one more time despite his objections about marginal returns. She was focused. She was mostly focused. Her mind kept slipping its leash and drifting back to the gym, and she kept telling herself it was simply the satisfaction of catching him off guard after the way he’d dismissed her — a point scored, nothing more.</p>
+          <p>Still. She couldn’t entirely deny there had been a spark of something else when their eyes met. Something that had nothing to do with Veridian, and that she had no intention of examining at any point in this decade.</p>
+          <p>Before bed she finally checked her messages and found a stack of missed texts from Talia, ending with:</p>
+          <p>Don’t wait up. I found something much more interesting than room service tonight.</p>
+          <p>Nia shook her head, amused and unsurprised, and turned off the light.</p>
+      </div>
+      <div class="sample-end">
+        <p>The rest of the story continues on Amazon.</p>
+        <a class="cta" href="https://www.amazon.com/dp/B0HCLNQT97" target="_blank" rel="noopener noreferrer">
+          Pre-order on Amazon
+        </a>
+      </div>
     </section>
 
     <section class="card about">
@@ -227,6 +503,13 @@
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+    const btn = document.getElementById('toggleSample');
+    const sample = document.getElementById('sample');
+    btn.addEventListener('click', function () {
+      const open = sample.classList.toggle('open');
+      btn.textContent = open ? 'Hide sample' : 'Read the opening chapters';
+      if (open) sample.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
   </script>
 </body>
 </html>
